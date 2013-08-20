@@ -1,0 +1,35 @@
+/* To change the font. */
+/*$baseFontFamily: Oxygen;
+@import url('http://fonts.googleapis.com/css?family=Oxygen');*/
+
+
+/* To change color of navbar */
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+/* To change color of button background */
+/*$btnPrimaryBackground: green;*/
+
+
+@import 'bootstrap';
+
+/* To push content down so it doesn't get hidden under navbar */
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/* To remove shadow from navbar */
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
